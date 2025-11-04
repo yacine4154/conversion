@@ -1,0 +1,5 @@
+{
+  "name": "Convertisseur Image/PDF vers Texte",
+  "description": "Une application web pour extraire le texte de fichiers image ou PDF en utilisant l'API Gemini et le télécharger en tant que document Word (.doc).",
+  "requestFramePermissions": []
+}
