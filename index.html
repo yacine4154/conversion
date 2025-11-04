@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF--8" />
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Convertisseur Image/PDF vers Texte</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,29 +11,24 @@
       }
       @import url('https://rsms.me/inter/inter.css');
     </style>
-
-    <!-- 1. AJOUT DU SCRIPT BABEL -->
-    <!-- Ce script va "traduire" votre code TSX en JS compréhensible par le navigateur -->
+    <!-- Ajout de Babel Standalone pour la transpilation -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-    <script type="importmap">
-    {
-      "imports": {
-        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
-        "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
-        "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
-        "react": "https://aistudiocdn.com/react@^19.2.0",
-        "react/": "https://aistudiocdn.com/react@^19.2.0/",
-        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
-      }
-    }
-    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
 </head>
-<body class="bg-slate-900 text-white">
+  <body class="bg-slate-900 text-white">
     <div id="root"></div>
-    
-    <!-- 2. MODIFICATION DU TYPE DE SCRIPT -->
-    <!-- On dit au navigateur d'utiliser Babel pour ce script -->
+    <!-- Le type est changé pour que Babel traite ce script -->
     <script type="text/babel" data-type="module" src="./index.tsx"></script>
-</body>
+  </body>
 </html>
